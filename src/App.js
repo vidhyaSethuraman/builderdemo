@@ -12,7 +12,7 @@ function App() {
     < >
       <Header/>
       <Banner1/>
-      <Testimonials/>
+     
     </>
   );
 }
