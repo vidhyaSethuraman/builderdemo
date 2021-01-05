@@ -1,0 +1,620 @@
+
+body, html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    vertical-align: middle;
+    font-synthesis: none;
+    -moz-font-feature-settings: "kern";
+}
+body{
+	font-family: sans-serif;
+	font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    text-align: left;
+    background-image: linear-gradient(to left, #274782, #1c0f4b 75%);
+    margin: 0;    
+    overflow-x: hidden;
+}
+::-webkit-input-placeholder { /* Edge */
+  color: #d9d9d9;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #d9d9d9;
+}
+
+::placeholder {
+  color: #d9d9d9;
+}
+
+/*Theme Common CSS*/
+ul,li,p,h1,h2,h3,h4,h5,h6{
+	padding: 0;
+	margin: 0;
+}
+
+.truncate{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	word-wrap: normal;
+	overflow: hidden;
+	display: block;
+}
+.brand-logo,.brand-logo:hover{
+	font-size: 24px;
+    font-weight: 900;
+    color: #4b4b5a;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px 0;
+}
+.pad0{
+	padding: 0 !important;
+}
+.common-btn,.common-ol-btn{
+	display: inline-block;
+	min-width: 120px;
+	text-align: center;
+    padding: 6px 12px;
+    line-height: 1.5;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+.common-btn:hover,.common-btn:focus{
+    text-decoration: none;
+    color: #fff;
+}
+.login-btn{
+    background: #F80959
+}
+.playnow{
+    font-size: 15px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.29);
+    background-image: linear-gradient(262deg, #ff3f7b, #f70054 37%, #a7015f);
+}
+.container{
+    max-width: 1200px;
+    width: 100%!important;
+    padding: 0;
+}
+
+.common-title{
+    font-size: 40px;
+    font-family: sans-serif;
+    color: #ffffff;
+    font-weight: 600;
+    font-style: normal;
+    text-align: left;
+    line-height: 80px;
+}
+.adda-sub-title{
+    font-family: sans-serif;
+    font-size: 22px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 600;
+    width: 100%;
+    padding: 20px 0px 10px 0px;
+    position: relative;
+}
+.adda-sub-title:before{
+    left: 0;
+    bottom: 0;
+    width: 55px;
+    height: 3px;
+    content: '';
+    display: block;
+    background: #01cbf6;
+    position: absolute;
+}
+
+/*Header Starts Here*/
+
+.adda-top-header{
+    background: #0D0D0D;
+    padding: 4px 0px;
+}
+.adda-lang{
+    list-style-type: none;
+}
+.adda-lang li{
+    display: inline-block;
+    padding: 0 16px 0 0;
+}
+.adda-lang li a{
+    color: #428bca;
+}
+.adda-lang li a:hover{
+    color: #2a6496;
+    text-decoration: none;
+}
+.adda-support{
+    color: #fff;
+    float: right;
+}
+.adda-support span{
+    padding: 0 0 0 8px;
+}
+.adda-main-nav{
+    background: rgba(16, 14, 46, 0.9);
+    color: #fff;
+    padding: 16px 0;
+}
+.adda-nav-links{
+    list-style-type: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    float: right;
+}
+.adda-nav-links li{
+    display: inline-block;
+    margin: 0 -5px;
+}
+.adda-nav-links a{
+    font-weight: 800;
+    color: #02cef9;
+    display: inline-block;
+    padding: 8px 16px;
+    text-transform: uppercase;
+}
+.adda-nav-links a:hover,.adda-nav-links a:focus{
+    text-decoration: none;
+    color: #E41919;
+}
+.adda-header-action {
+    float: right;
+    list-style-type: none;
+}
+.adda-header-action li{
+    display: inline-block;
+    margin: 0 2px;
+}
+
+/*Mobile Header*/
+.adda-micon{
+    background-image: linear-gradient(13deg, #400e6f 2%, #ff0054 60%, #ff86ab);
+    float: left;
+    width: 48px;
+    height: 32px;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 4px;
+    display: none;
+}
+.adda-micon span{
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background: #fff;
+    margin: 4px auto;
+}
+/*Header Ends Here*/
+/*Banner starts here*/
+#homebanner{
+    height: 560px;
+
+}
+#homebanner .carousel-item img{
+    width: 100%;
+    height: 560px;
+    object-fit: cover;
+}
+/*About Section Starts here*/
+#adda-about{
+    padding: 72px 0;
+    background-image: linear-gradient(to left, #274782, #1c0f4b 75%);
+    border-bottom: 2px solid #1050c7;
+}
+#adda-about h1{
+    font-size: 36px;
+    margin: 0 0 32px;
+    font-weight: 600;
+}
+#adda-about h2{
+    color: #02cef9;
+    font-size: 20px;
+    margin: 0 0 16px;
+    font-weight: 600;
+}
+#adda-about h3{
+    font-size: 20px;
+    margin: 0 0 16px;
+    font-weight: 600;
+}
+#adda-about p{
+    font-size: 14px;
+    line-height: 19px;
+    padding: 0 14px 14px;
+}
+/*About Section Ends here*/
+
+/*Review Starts Here*/
+#adda-home-review{
+    padding: 72px 0;
+    background-color: #0a0423;
+    border-bottom: 2px solid #1050c7;
+}
+.adda-hr-cnt{
+    padding: 0 70px 0 0;
+}
+.add-hr-name{
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 600;
+    font-style: italic;
+    text-align: left;
+    width: auto;
+    line-height: 60px;
+    margin: 88px 0 40px;
+    
+}
+.add-hr-info span{
+    font-size: 18px;
+    color: #00b5ff;
+    font-weight: 600;
+    line-height: 25px;
+    display: block;
+    padding: 0 0 10px;
+}
+.add-hr-info  i{
+    color: #d60054;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0 2px 0 0;
+}
+.adda-hr-msg {
+    padding: 8px 0 0;
+    font-size: 16px;
+    color: #fff;
+    line-height: 20px;
+    text-align: justify;
+}
+.adda-hr-msg p{
+    margin: 0 0 16px;
+}
+#adda-review-banner .carousel-indicators{
+    position: absolute;
+    bottom: -32px;
+    z-index: 15;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*REview Section Endes Here*/
+
+/*Promotion Slider Starts*/
+#adda-promotion-review{
+    background-color: #0a0423;
+    border-bottom: 2px solid #1050c7;
+    position: relative;
+}
+#adda-promotion-banner img{
+    min-height: 450px;
+    width: 100%;
+    object-fit: cover;
+}
+#adda-promotion-banner .add-promo-name{
+    margin: 32px 0;
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 600;
+    font-style: italic;
+    text-align: left;
+}
+.adda-promo-cnt{
+    padding: 16px 70px 0 30px;
+    width: 75%;
+}
+.adda-promo-msg{
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: left;
+    border: none;
+    padding: 0 88px 0 0;
+}
+#adda-promotion-banner  .carousel-indicators{
+    position: absolute;
+    bottom: 24px;
+    z-index: 15;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+#adda-promotion-review  .join-now,#adda-promotion-review  .join-now:hover{
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 12px;
+    width: 220px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    background-image: linear-gradient(13deg, #400e6f -17%, #ff0054 60%, #ff86ab);
+    -webkit-transition: all 500ms linear;
+    -moz-transition: all 500ms linear;
+    -o-transition: all 500ms linear;
+    -ms-transition: all 500ms linear;
+    transition: all 500ms linear;
+    position: absolute;
+    right: 20px;
+    top: 40%;
+    text-decoration: none;
+    border-radius: 4px;
+}
+#adda-promotion-review  .join-now:hover{
+    background-image: linear-gradient(13deg, #400e6f 2%, #ff0054 60%, #ff86ab);
+}
+/*Promotion Slider Ends here*/
+
+/*Blogs Start here*/
+#adda-blogs-list{
+    padding: 72px 0;
+    background-image: linear-gradient(to left, #274782, #1c0f4b 75%);
+    border-bottom: 2px solid #1050c7;
+}
+#adda-blogs-list h2{
+    text-transform: uppercase;
+    font-size: 46px;
+    color: #fff;
+    text-align: center;
+    margin: 0 0 32px;
+    font-weight: 700;
+}
+.adda-blogs-card{
+    position: relative;
+    height: 400px;
+    background: #fff;
+}
+.adda-blogs-card img{
+    width: 100%;
+}
+.adda-blogs-cnt {
+    background: #fff;
+    padding: 20px;
+    color: #555;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.adda-blogs-cnt h3{
+    font-weight: 900;
+    font-size: 16px;
+    color: #555;
+    text-transform: uppercase;
+    margin: 0 0 8px;
+}
+.adda-blogs-cnt .readmore{
+    display: inline-block;
+    text-decoration: none;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 8px;
+    color: #fff;
+    background-image: linear-gradient(262deg, #ff3f7b, #f70054 37%, #a7015f);
+    -webkit-transition: all 500ms linear;
+    -moz-transition: all 500ms linear;
+    -o-transition: all 500ms linear;
+    -ms-transition: all 500ms linear;
+    transition: all 500ms linear;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.29);
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*Blogs Ends here*/
+
+/*Footer Starts Here*/
+footer{
+    background-color: #0a0423;
+    color: #fbfbfb;
+    padding: 40px 0 16px;
+}
+.footer-links{
+    list-style: disc;
+}
+.footer-links li,.contacts li{
+    margin: 0 0 5px;
+}
+.footer-links li a,.contacts li a{
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    opacity: 0.7;
+    font-size: 14px;
+}
+.footer-links li a:hover{
+    -webkit-transform: translate(5px, 0);
+    -moz-transform: translate(5px, 0);
+    -ms-transform: translate(5px, 0);
+    -o-transform: translate(5px, 0);
+    transform: translate(5px, 0);
+    color: #E41919;
+    opacity: 1;
+    text-decoration: none;
+}
+.contacts li a:hover{
+    color: #E41919;
+    opacity: 1;
+    text-decoration: none;
+}
+.contacts li a i{
+    margin: 0 10px 0 0;
+    color: #fff;
+    opacity: 1;
+}
+.footer-icons img{
+    width: 100%;
+    padding: 32px 0;
+}
+.social-login li{
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 10px 0 0;
+}
+.social-login li:first-child{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+.social-login li a{
+    color: #fff;
+    moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    opacity: 0.7;
+    font-size: 14px;
+
+}
+.social-login li a:hover{
+    opacity: 1;
+}
+.copyright{
+    padding: 16px 0;
+    border-top: 1px solid rgba(238,238,238,.1);
+}
+.footer-marque{
+    background: #000;
+}
+.footer-marque p{
+    margin: 0;
+}
+.footer-marque a{
+    color: #fff;
+    text-decoration: underline;
+
+}
+.footer-marque marquee{
+    overflow: hidden;
+    position: relative;
+    color: #fbd836;
+    height: auto;
+    padding: 8px 0;
+}
+/*Footer Ends Here*/
+
+
+
+
+/*Media Query Starts Here*/
+@media screen and (max-width: 768px){
+    footer{
+        padding: 24px 16px;
+    }
+    .hidden-mobile{
+        display: none!important;
+    }
+    .footer-links,.contacts{
+        padding: 0 0 0 15px;
+    }
+    .adda-top-header{
+        padding: 4px 16px;
+    }
+    .adda-brand{
+        float: left;
+    }
+    .login-btn{
+        padding: 6px;
+    }
+    .adda-lang li{
+        padding: 0 8px 0 0;
+    }
+    .adda-micon{
+        display: block;
+    }
+    #adda-home-review{
+        padding: 32px 20px 60px;
+    }
+    .adda-hr-cnt{
+        padding: 0;
+        text-align: center;
+    }
+    .add-hr-name{
+        text-align: center;
+        font-size: 32px;
+        margin: 24px 0;
+        line-height: 32px;
+    }
+    #adda-home-review .d-block {
+        width: 100%;
+    }
+    #adda-about{
+        padding: 32px 20px;
+    }
+    #adda-blogs-list{
+        padding: 32px;
+    }
+    #adda-about h1{
+        font-size: 27px;
+     }
+    #adda-about h2{
+        font-size: 20px;
+    }
+    #adda-about p{
+        padding: 0 0 14px;
+    }
+    .adda-blogs-card{
+        margin: 0 0 16px;
+        height: auto;
+    }
+    .adda-promo-cnt{
+        width: 100%;
+        padding: 24px 20px;
+    }
+    .adda-promo-msg{
+        padding: 0;
+    }
+    #adda-promotion-banner img{
+        min-height: auto;
+    }
+    #adda-promotion-review  .join-now{
+        position: static;
+        margin: 24px auto 0;
+        display: block;
+    }
+    #adda-promotion-banner .carousel-indicators{
+        bottom: 0;
+    }
+    #adda-promotion-banner .add-promo-name{
+        font-size: 32px;
+        margin: 24px 0;
+    }
+    #adda-promotion-review{
+        padding: 0 0 32px;
+    }
+    #adda-blogs-list h2{
+        font-size: 32px;
+    }
+}
+/*Media Query Ends Here*/

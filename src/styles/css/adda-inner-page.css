@@ -1,0 +1,215 @@
+#adda-how-to-playpage,#adda-promotion-page{
+    padding: 40px 0;
+}
+.adda-htp-sidemenu{
+    background-color: #274681;
+    max-width: 400px;
+    list-style-type: none;
+}
+.adda-htp-sidemenu a{
+    display: block;
+    padding: 20px 25px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+.adda-htp-sidemenu li a span {
+    margin-right: 16px;
+    color: #fff;
+}
+.adda-htp-sidemenu span i{
+    font-size: 20px;
+}
+.adda-htp-sidemenu a:hover,.adda-htp-sidemenu a:focus{
+    background-color: #23326E;
+}
+.adda-common-content {
+    font-size: 14px;
+    color: #fff;
+    line-height: 27px;
+}
+.adda-common-content h1{
+    font-weight: 800;
+    margin: 0;
+    border-bottom: 2px solid #1050c7;
+    margin: -22px 0 20px 0;
+}
+.adda-common-content p{
+    margin: 0 0 10px;
+}
+.adda-common-content h2{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    color: #02cef9;
+    font-family: sans-serif;
+}
+.adda-common-content ul, .adda-common-content ol {
+    list-style: disc;
+    margin: 0 0 25px 0;
+    padding: 0 0 0 15px;
+}
+.adda-cnt-slider{
+    padding: 0 0 40px;
+}
+.adda-cnt-card {
+    margin: 0 12px
+}
+.adda-cnt-card img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+.adda-cs-cnt{
+    background: #fff;
+    padding: 8px;
+}
+.adda-cs-cnt h4{
+    font-size: 14px;
+    color: #444444;
+    font-weight: bold;
+    text-align: center;
+}
+.adda-cnt-slider .slick-prev:before{
+    content: "\f053"!important;
+    font-family: 'FontAwesome';
+}
+.adda-cnt-slider .slick-next:before{
+    content: "\f054"!important;
+    font-family: 'FontAwesome';
+}
+/*Promotion page*/
+.promotion-page{
+    padding: 40px 0 0;
+}
+.adda-promotion-banner img{
+    width: 100%;
+}
+.promotions-card{
+    padding: 32px 0;
+}
+.promotions-card a,.promotions-card a:hover{
+    color: #444444;
+    text-decoration: none;
+    display: block;
+}
+.promo-caption{
+    background: #fff;
+    font-size: 16px;
+    color: #444444;
+    font-weight: bold;
+    text-align: center;
+    padding: 16px;
+    height: 56px;
+}
+.promotion-cnt{
+    display: block;
+    padding: 0px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background: none !important;
+    border: none;
+    border-radius: 0px;
+    transition: all 0.5s ease 0s;
+    transform: scale(1);
+}
+.promotion-cnt img{
+    width: 100%;
+}
+.promotion-cnt:hover{
+    border: none;
+    -moz-box-shadow: 1px 3px 5px 2px #e3e3e3;
+    -webkit-box-shadow: 1px 3px 5px 2px #e3e3e3;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+    transform: scale(1.05);
+}
+.promo-caption h4{
+    font-size: 16px;
+    position: relative;
+    margin: 0;
+}
+.promo-caption h4:after{
+    content: "\f061";
+    position: absolute;
+    right: 1em;
+    
+    font-family: FontAwesome;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+/*FAQ Page*/
+.faq-wrapper h3{
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+.faq-wrapper .card{
+    border: none;
+    background: #314279;
+    margin: 0 0 40px;
+}
+.faq-wrapper .btn-link{
+    color: #fff;
+    min-height: 48px;
+    width: 100%;
+    text-align: left;
+    padding: 12px 32px 12px 12px!important;
+    white-space: normal;
+}
+.faq-wrapper .card-header{
+    background-color: #100C2E;
+    border-radius: 4px 4px 0 0;
+    border: none;
+    color: #fff;
+    padding: 0;
+}
+.faq-wrapper .panel-body {
+    background: #314279;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+}
+.faq-wrapper .card-header button{
+    font-size: 14px;
+}
+.faq-wrapper .card-header button.collapsed:before{
+    content: "\f078";
+    font-size: 14px;
+    position: absolute;
+    font-family: 'FontAwesome';
+    right: 8px;
+    top: 14px;
+    transform: rotate(0deg);
+    transition: all 0.5s;
+    font-weight: 300;
+}
+.faq-wrapper .card-header button:before{
+    content: "\f078";
+    font-size: 14px;
+    position: absolute;
+    font-family: 'FontAwesome';
+    right: 8px;
+    font-weight: 300;
+    top: 14px;
+    transition: all 0.5s;
+    transform: rotate(-180deg);
+}
+@media screen and (max-width: 768px){
+    .adda-common-content{
+        padding: 0 16px;
+    }
+    .adda-common-content h1{
+        font-size: 22px;
+        line-height: 50px;
+    }
+    .faq-wrapper .card{
+        margin: 0 0 16px;
+    }
+}
