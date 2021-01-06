@@ -13,7 +13,7 @@ function Banner1() {
           let arr =[]
           console.log(res.items[0].fields.image.fields.file.url);
           arr = res.items.map((item)=>{return item.fields.image.fields.file.url});
-          console.log(arr)
+         
           let activeimage = arr.shift()
           setactiveimage(activeimage)
           setimages(arr);
@@ -33,7 +33,7 @@ function Banner1() {
                           <img class="d-block w-100" src={activeimage} alt=""/>
                     </div>}
                     {images && images.map((image) => {
-                      console.log(image)
+                     
                       return (
                         <div class="carousel-item">
                           <img class="d-block w-100" src={image} alt=""/>

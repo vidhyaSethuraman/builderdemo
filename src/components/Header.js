@@ -45,9 +45,9 @@ function Header() {
                         <div class="col-sm-6 hidden-mobile">
                         <ul class="adda-nav-links">
                             <li><a href="/">Home</a></li>
-                            <li><a href="/how-to-play.html">How to Play</a></li>
-                            <li><a href="/promotions.html">Promotions</a></li>
-                            <li><a href="/promotions.html">Refer a Friend</a></li>
+                            <li><a href="/how-to-play">How to Play</a></li>
+                            <li><a href="/promotions">Promotions</a></li>
+                            <li><a href="/promotions">Refer a Friend</a></li>
                         </ul>
                         </div>
                         <div class="col-sm-4 col-5">
