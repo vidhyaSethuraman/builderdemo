@@ -9,12 +9,13 @@ import {
   Switch,
 } from 'react-router-dom';
 
-
+import Header from './components/Header'
 
 function App() {
 
   return (
     <>
+    <Header/>
      <Router>
         <Switch>
             

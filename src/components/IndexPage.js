@@ -6,7 +6,7 @@ import Testimonials from './Testimonials';
 function IndexPage() {
     return (
         <>
-            <Header/>
+            
             <Banner1/>
             
         </>
