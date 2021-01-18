@@ -8,20 +8,19 @@ function Banner1() {
     const [activeimage,setactiveimage]=useState(null)
 
     useEffect(() => {
-        client.getEntries({content_type: 'banner1'})
-        .then((res)=>{
-          let arr =[]
-          console.log(res.items[0].fields.image.fields.file.url);
-          arr = res.items.map((item)=>{return item.fields.image.fields.file.url});
-         
-          let activeimage = arr.shift()
-          setactiveimage(activeimage)
-          setimages(arr);
-        })
-        .catch((err)=>{
-          console.log(err);
-        })
-    }, [])
+      axios.get("https://cdn.builder.io/api/v2/content/banner?apiKey=2508fb0a743b46aeb21882763279945b")
+      .then((res)=>{
+        let arr =[]
+        arr = res.data.results.map((item)=>{return item.data.image});
+       
+        let activeimage = arr.shift()
+        setactiveimage(activeimage)
+        setimages(arr);
+      })
+      .catch((err)=>{
+        console.log(err);
+      })
+  }, [])
 
     return (
         <>
